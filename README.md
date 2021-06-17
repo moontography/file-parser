@@ -17,7 +17,8 @@ const parser = FileParser().load(data) // data(required): filepath (String) or B
 // const parser = FileParser(data).load() // also acceptable
 
 // NOTE: This is a blocking command, so be aware when parsing multiple files or large files
-const csvData = parser.parseFile() // returns parsed data for .csv file
+
+const csvData = await parser.parseFile() // returns parsed data for .csv file
 // [
 //    // Row 1
 //    {
@@ -39,7 +40,7 @@ const csvData = parser.parseFile() // returns parsed data for .csv file
 //    }
 //  ],
 
-const xlsxData = parser.parseFile() // returns parsed workbook for .xlsx file
+const xlsxData = await parser.parseFile() // returns parsed workbook for .xlsx file
 // {
 //  'Sheet 1 Name': [
 //    // Row 1
