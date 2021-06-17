@@ -38,7 +38,6 @@ const csvData = parser.parseFile() // returns parsed data for .csv file
 //      'Column 3 Header': 'Column 3 Row 3 Value',
 //    }
 //  ],
-```
 
 const xlsxData = parser.parseFile() // returns parsed workbook for .xlsx file
 // {
