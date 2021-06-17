@@ -17,6 +17,7 @@ const parser = FileParser().load(data) // data(required): filepath (String) or B
 // const parser = FileParser(data).load() // also acceptable
 
 // NOTE: This is a blocking command, so be aware when parsing multiple files or large files
+// NOTE: When parsing, it is assumed the first row in the file data is the column header
 
 const csvData = await parser.parseFile() // returns parsed data for .csv file
 // [
